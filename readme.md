@@ -13,6 +13,18 @@ https://huggingface.co/microsoft/llava-med-v1.5-mistral-7b
 
 根据requirements.txt安装对应的python环境依赖，python3.10
 
+4. 原始代码问题修改：
+```bash
+  File "/home/qianq/.conda/envs/demo/lib/python3.10/site-packages/swift/llm/template/template/llava.py", line 55, in _encode
+    num_image_tokens = (height // self.processor.patch_size) * (
+TypeError: unsupported operand type(s) for //: 'int' and 'NoneType'
+
+该文件加入代码->swift/llm/template/template/llava.py line 55
+if self.processor.patch_size is None:
+    self.processor.patch_size = 14
+
+```
+
 4. 执行程序
 ```bash
 bash infer.sh
