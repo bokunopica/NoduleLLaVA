@@ -25,7 +25,13 @@ if self.processor.patch_size is None:
 
 ```
 
-4. 执行程序
+5. 下载ckpt
+
+通过网盘分享的文件：ckpt.zip
+链接: https://pan.baidu.com/s/1hkArpiNHSXVFD1xyNm9Vcw 提取码: eeu6
+如果链接失效请联系 qianq9720@163.com
+
+6. 执行程序
 ```bash
 bash infer.sh
 ```
