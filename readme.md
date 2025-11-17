@@ -7,7 +7,7 @@ https://huggingface.co/microsoft/llava-med-v1.5-mistral-7b
 ```
     --model "/path/to/llava-med-v1.5-mistral-7b" \ # llava-med base-model存放位置
     --adapters "/path/to/NoduleLLaVA/ckpt/checkpoint-820" \ # lora存档位置
-    --dataset "/home/qianq/mycodes/NoduleLLaVA/example" \ # 数据集位置
+    --dataset "/path/to/NoduleLLaVA/example" \ # 数据集位置
 ```
 3. 配置环境
 
