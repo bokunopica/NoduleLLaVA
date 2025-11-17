@@ -1,0 +1,2 @@
+ckpt/checkpoint-820/*.safetensors filter=lfs diff=lfs merge=lfs -text
+ckpt/checkpoint-820/*.pt filter=lfs diff=lfs merge=lfs -text

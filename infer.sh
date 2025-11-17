@@ -1,0 +1,14 @@
+python inference.py \
+    --model "/home/qianq/model/llava-med-v1.5-mistral-7b" \
+    --model_type "llava1_5_hf" \
+    --adapters "/home/qianq/mycodes/NoduleLLaVA/ckpt/checkpoint-820" \
+    --dataset "/home/qianq/mycodes/NoduleLLaVA/example" \
+    --cuda_visible_devices "0" \
+    --max_batch_size 8 \
+    --max_new_tokens 512 \
+    --temperature 0.0 \
+    --top_p 0.9 \
+    --write_batch_size 1024 \
+    --tensor_parallel_size 1 \
+    --result_path "inference_output.jsonl" \
+    --metric acc
